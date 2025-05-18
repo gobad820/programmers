@@ -3,6 +3,10 @@ project(Programmers)
 
 set(CMAKE_CXX_STANDARD 17)
 
+# 모든 실행파일에 .out 확장자 적용
+set(CMAKE_EXECUTABLE_SUFFIX ".out")
+set(CMAKE_EXECUTABLE_SUFFIX_C ".out")
+set(CMAKE_EXECUTABLE_SUFFIX_CXX ".out")
 
 # 1) 실행 파일은 모두 build/bin 에서 생성
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
