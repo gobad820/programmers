@@ -65,11 +65,10 @@ int solution() {
                 answer = std::max(getSameCandiesNumber(), answer);
                 std::swap(board[i][j], board[i + 1][j]);
             }
-            if(j + 1 < n && board[i][j] != board[i][j+1]){
-                std::swap(board[i][j], board[i ][j+1]);
+            if (j + 1 < n && board[i][j] != board[i][j + 1]) {
+                std::swap(board[i][j], board[i][j + 1]);
                 answer = std::max(getSameCandiesNumber(), answer);
-                std::swap(board[i][j], board[i ][j+1]);
-
+                std::swap(board[i][j], board[i][j + 1]);
             }
         }
     }
@@ -82,7 +81,7 @@ int main(int argc, char** argv) {
     int t = 1;
     // cin >> t; // 여러 테스트 케이스를 위한 코드
     while (t--) {
-       std::cout << solution();
+        std::cout << solution();
     }
 
     return 0;
